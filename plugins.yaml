@@ -1,0 +1,13 @@
+plugins:
+  decode_json_pod_logs:
+    shortCut: Ctrl-L
+    confirm: false
+    description: Decode logs
+    scopes:
+      - pods
+    command: decode_json_logs.sh
+    background: false
+    args:
+      - --namespace
+      - $NAMESPACE
+      - $NAME
