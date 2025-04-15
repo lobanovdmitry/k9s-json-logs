@@ -8,6 +8,8 @@ plugins:
     command: decode_json_logs.sh
     background: false
     args:
+      - --context
+      - $CONTEXT
       - --namespace
       - $NAMESPACE
       - $NAME
